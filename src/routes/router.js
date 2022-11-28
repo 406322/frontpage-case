@@ -23,7 +23,7 @@ router.get('/component', (req, res) => {
   logger.info('Request /component route');
   res.type('text/html');
 
-  res.end('<amedia-frontpage> Her skal forsiden komme </amedia-frontpage>');
+  res.end('<amedia-frontpage> <hello-world">Hello World!</hello-world> </amedia-frontpage>');
 });
 
 router.get('/preview', (req, res) => {
