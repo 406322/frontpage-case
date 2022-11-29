@@ -28,11 +28,12 @@ router.get('/component', (req, res) => {
 
 
 router.get('/preview', (req, res) => {
+  const publication = req.query.publication
   logger.info('Request /preview route');
   res.type('text/html');
 
-  // Kan vi ha publication som en query param til routen?
-  const html = preview({ publication: 'www.tb.no' });
+  // Kan vi ha publication som en query param til routen? -Fikset
+  const html = preview({ publication: publication });
   res.end(html);
 });
 
