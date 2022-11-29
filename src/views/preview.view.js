@@ -17,6 +17,8 @@ export default function renderPreview({ publication }) {
 
         <amedia-include param-publication="${publication}" manifest="https://${servicesHost}/api/brandheader/v1/components/header/${publication}/manifest/"></amedia-include>
 
+        <amedia-frontpage param-publication="${publication}" id="teasers"></amedia-frontpage>
+
         <amedia-include param-publication="${publication}" manifest="${basepath}/manifest"></amedia-include>
     </body>
     </html>

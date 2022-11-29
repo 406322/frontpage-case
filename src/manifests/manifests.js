@@ -38,7 +38,7 @@ export default {
       ],
       js: [
         'http://localhost:8080/frontpage-case/assets/script.js', // Kan host byttes ut med en verdi fra config?
-        'https://lslettin.b-cdn.net/4/app.js'
+        'https://lslettin.b-cdn.net/7.2/media-frontpage.js'
       ]
     },
   }
