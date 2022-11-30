@@ -14,7 +14,11 @@ export default function renderPreview({ publication }) {
     </head>
     <body>
         <!-- Parameter til komponenten sendes inn som attributter med prefix param -->
+
         <amedia-include param-publication="${publication}" manifest="https://${servicesHost}/api/brandheader/v1/components/header/${publication}/manifest/"></amedia-include>
+
+        <amedia-frontpage param-publication="${publication}" id="teasers"></amedia-frontpage>
+
         <amedia-include param-publication="${publication}" manifest="${basepath}/manifest"></amedia-include>
     </body>
     </html>

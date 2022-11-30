@@ -22,16 +22,16 @@ router.get(
 router.get('/component', (req, res) => {
   logger.info('Request /component route');
   res.type('text/html');
-
-  res.end('<amedia-frontpage> Her skal forsiden komme </amedia-frontpage>');
+  res.end();
 });
 
+
 router.get('/preview', (req, res) => {
+  const publication = req.query.publication
   logger.info('Request /preview route');
   res.type('text/html');
 
-  // Kan vi ha publication som en query param til routen?
-  const html = preview({ publication: 'www.dt.no' });
+  const html = preview({ publication: publication });
   res.end(html);
 });
 
